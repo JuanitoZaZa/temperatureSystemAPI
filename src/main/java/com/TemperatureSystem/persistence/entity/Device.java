@@ -25,7 +25,7 @@ public class Device {
     @OneToMany(mappedBy = "device")
     private List<TemperatureReading> temperatureReading;
 
-    @OneToOne(mappedBy = "device")
+    @OneToMany(mappedBy = "device")
     private List<Alert> alert;
 
     // Getters and Setters with Lombok

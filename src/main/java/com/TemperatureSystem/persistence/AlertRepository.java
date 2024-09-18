@@ -21,7 +21,7 @@ public class AlertRepository {
     }
 
     // DELETE
-    public void delete(int id){
-        alertCrudRepository.deleteById(id);
+    public void delete(int alertID){
+        alertCrudRepository.deleteById(alertID);
     }
 }

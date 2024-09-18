@@ -7,7 +7,6 @@ import lombok.Data;
 @Table(name = "alertas")
 @Data
 public class Alert {
-    // Attributes
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_alerta")
@@ -19,10 +18,7 @@ public class Alert {
     @Column(name = "creacion_alerta")
     private String creationTime;
 
-    // Relationships
     @ManyToOne
     @JoinColumn(name = "id_dispositivo")
     private Device device;
-
-    // Getters and setters with Lombok
 }
